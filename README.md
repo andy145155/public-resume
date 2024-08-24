@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="images/public-resume.png" alt="Logo" width="500" height="330">
+  <img src="images/public-resume.png" alt="Logo" height="330">
 
   <h3 align="center">Movie Recommender App</h3>
 
