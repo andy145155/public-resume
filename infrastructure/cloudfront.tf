@@ -55,7 +55,7 @@ resource "aws_cloudfront_distribution" "resume_redirect" {
 resource "aws_cloudfront_function" "resume_redirect_function" {
   name    = "resumeRedirectFunction"
   runtime = "cloudfront-js-2.0"
-  code    = file("${path.module}/redirectFunction.js")
+  code    = file("${path.module}/cloudfrontFunctions/redirectToExternalSite.js")
 }
 
 # Create the Route 53 record for your resume domain
