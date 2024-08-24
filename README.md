@@ -63,3 +63,11 @@ This script will:
 
 - Initialize Terraform.
 - Apply the configuration to set up the necessary AWS resources.
+
+## Learn More on Medium
+
+I’ve written a detailed tutorial on how to set up AWS CloudFront, S3, and Route 53 to redirect a custom domain to a Google Docs resume using Terraform. This post covers the step-by-step process, including configuration and deployment.
+
+[Read the Full Tutorial on Medium](https://awstip.com/effortlessly-redirect-your-custom-domain-to-a-google-docs-resume-using-aws-a-terraform-guide-93f5cde92e40?source=friends_link&sk=64c7ae560790b8ddd58edcb1676f0410)
+
+Feel free to check it out for more in-depth information and insights!
