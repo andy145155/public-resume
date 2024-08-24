@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository provides a Terraform setup to redirect a custom domain to a Google Docs resume using AWS services. The solution involves configuring AWS CloudFront, Route 53, and S3 to handle redirection with Terraform automation. 
+This repository provides a Terraform setup to redirect a custom domain to a Google Docs resume using AWS services. The solution involves configuring AWS CloudFront, Route 53, and S3 to handle redirection with Terraform automation.
 
 ## Architecture
 
@@ -29,3 +29,28 @@ Before getting started, ensure you have:
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
+
+## Configure Your Variables
+
+1. **Edit `terraform.tfvars`**
+
+   Update the `terraform.tfvars` file with your domain information:
+
+   - `root_domain`: Your main domain (e.g., `your-custom-domain.com`).
+   - `resume_domain`: The subdomain for your resume (e.g., `resume.your-custom-domain.com`).
+
+2. **Update `redirectFunction.js`**
+
+   Modify the `redirectFunction.js` file to include the URL of your Google Docs resume. Locate the `google_form_url` variable and set it to your resume's public link:
+
+## Run the Deployment
+
+Execute the following script to initialize and apply the Terraform configuration:
+
+```bash
+chmod +x deploy.sh
+./deploy.sh
+```
+
+This script will: - Initialize Terraform. - Apply the configuration to set up the necessary AWS resources.
